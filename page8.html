@@ -1,0 +1,617 @@
+<!DOCTYPE html>  
+
+  
+
+<html lang="en">  
+
+  
+
+<head>  
+
+  
+
+  <meta charset="UTF-8" />  
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+
+  
+
+  <title>Quiz</title>  
+
+  
+
+  <link rel="stylesheet" href="style.css" />  
+
+  
+
+   
+
+  
+
+  <script>  
+
+  
+
+    // --- JavaScript Events ---  
+
+  
+
+    function handleSelect() {  
+
+  
+
+      console.log("Text selected");  
+
+  
+
+    }  
+
+  
+
+   
+
+    function handleSubmit(event) {  
+
+  
+
+      event.preventDefault(); // Keeps the page from refreshing  
+
+  
+
+      alert("Quiz submitted!");  
+
+  
+
+    }  
+
+  
+
+   
+
+    function handleClick() {  
+
+  
+
+      console.log("Button clicked");  
+
+  
+
+    }  
+
+  
+
+   
+
+    function handleHover() {  
+
+  
+
+      console.log("Mouse hovering over a question");  
+
+  
+
+    }  
+
+  
+
+    // --- onload event --- 
+
+    function handleLoad() { 
+
+  
+
+      alert("Welcome to the quiz! Choose one answer per question and click Submit when you are done."); 
+
+  
+
+    } 
+
+  
+
+    // --- onunload event --- 
+
+    function handleUnload() { 
+
+  
+
+      console.log("User has left the quiz page"); 
+
+  
+
+    } 
+
+  
+
+  </script>  
+
+  
+
+</head>  
+
+  
+
+   
+
+<body onselect="handleSelect()" onload="handleLoad()" onunload="handleUnload()">  
+
+  
+
+  <!-- SIDEBAR -->  
+
+  
+
+  <nav class="sidebar">  
+
+  
+
+    <ul>  
+
+  
+
+      <li><a href="page1.html">Home</a></li>  
+
+  
+
+      <li><a href="page2.html">About</a></li>  
+
+  
+
+      <li><a href="page3.html">What is Screen Time</a></li>  
+
+  
+
+      <li><a href="page4.html">Statistics</a></li>  
+
+  
+
+      <li><a href="page5.html">Mental Health</a></li>  
+
+  
+
+      <li><a href="page6.html">Physical Health</a></li>  
+
+  
+
+      <li><a href="page7.html">Tips & Advice</a></li>  
+
+  
+
+      <li><a href="page8.html">Quiz</a></li>  
+
+  
+
+      <li><a href="page9.html">Resources</a></li>  
+
+  
+
+      <li><a href="page10.html">Contact</a></li>  
+
+  
+
+    </ul>  
+
+  
+
+  </nav>  
+
+  
+
+   
+
+  
+
+  <div class="content">  
+
+  
+
+    <h1>Test Your Knowledge</h1>  
+
+  
+
+    <p>  
+
+  
+
+      Think you know about screen time and its effects on health? Take this short quiz to find out how much you really  
+
+  
+
+      know. Choose one answer per question and submit when you are done.  
+
+  
+
+    </p>  
+
+  
+
+   
+
+  
+
+    <form class="quiz" onsubmit="handleSubmit(event)">  
+
+  
+
+      <!-- Question 1 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>1. How many hours of screen time per day is considered excessive for teenagers?</p>  
+
+  
+
+        <label><input type="radio" name="q1" value="a" /> 1 hour</label><br />  
+
+  
+
+        <label><input type="radio" name="q1" value="b" /> 2 hours</label><br />  
+
+  
+
+        <label><input type="radio" name="q1" value="c" /> 4+ hours</label><br />  
+
+  
+
+        <label><input type="radio" name="q1" value="d" /> 30 minutes</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 2 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>2. What does the 20-20-20 rule help prevent?</p>  
+
+  
+
+        <label><input type="radio" name="q2" value="a" /> Back pain</label><br />  
+
+  
+
+        <label><input type="radio" name="q2" value="b" /> Eye strain</label><br />  
+
+  
+
+        <label><input type="radio" name="q2" value="c" /> Anxiety</label><br />  
+
+  
+
+        <label><input type="radio" name="q2" value="d" /> Sleep problems</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 3 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>3. What hormone does blue light suppress?</p>  
+
+  
+
+        <label><input type="radio" name="q3" value="a" /> Adrenaline</label><br />  
+
+  
+
+        <label><input type="radio" name="q3" value="b" /> Dopamine</label><br />  
+
+  
+
+        <label><input type="radio" name="q3" value="c" /> Melatonin</label><br />  
+
+  
+
+        <label><input type="radio" name="q3" value="d" /> Serotonin</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 4 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>4. What does FOMO stand for?</p>  
+
+  
+
+        <label><input type="radio" name="q4" value="a" /> Fear Of Missing Out</label><br />  
+
+  
+
+        <label><input type="radio" name="q4" value="b" /> Feeling Of Moving On</label><br />  
+
+  
+
+        <label><input type="radio" name="q4" value="c" /> Focus On My Own</label><br />  
+
+  
+
+        <label><input type="radio" name="q4" value="d" /> Fear Of Making Outbursts</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 5 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>5. Which of these is a physical effect of too much screen time?</p>  
+
+  
+
+        <label><input type="radio" name="q5" value="a" /> Improved posture</label><br />  
+
+  
+
+        <label><input type="radio" name="q5" value="b" /> Better sleep</label><br />  
+
+  
+
+        <label><input type="radio" name="q5" value="c" /> Tech neck</label><br />  
+
+  
+
+        <label><input type="radio" name="q5" value="d" /> Stronger eyesight</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 6 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>6. How long should you look away from your screen every 20 minutes?</p>  
+
+  
+
+        <label><input type="radio" name="q6" value="a" /> 10 seconds</label><br />  
+
+  
+
+        <label><input type="radio" name="q6" value="b" /> 20 seconds</label><br />  
+
+  
+
+        <label><input type="radio" name="q6" value="c" /> 1 minute</label><br />  
+
+  
+
+        <label><input type="radio" name="q6" value="d" /> 5 minutes</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 7 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>7. Which mental health issue has been most linked to social media use?</p>  
+
+  
+
+        <label><input type="radio" name="q7" value="a" /> Schizophrenia</label><br />  
+
+  
+
+        <label><input type="radio" name="q7" value="b" /> OCD</label><br />  
+
+  
+
+        <label><input type="radio" name="q7" value="c" /> Anxiety and depression</label><br />  
+
+  
+
+        <label><input type="radio" name="q7" value="d" /> Bipolar disorder</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 8 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>8. What is "tech neck"?</p>  
+
+  
+
+        <label><input type="radio" name="q8" value="a" /> A type of phone case</label><br />  
+
+  
+
+        <label><input type="radio" name="q8" value="b" /> Neck and shoulder pain from looking down at screens</label><br />  
+
+  
+
+        <label><input type="radio" name="q8" value="c" /> A social media trend</label><br />  
+
+  
+
+        <label><input type="radio" name="q8" value="d" /> Eye strain from screens</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 9 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>9. Which organisation publishes guidelines on screen time for young people?</p>  
+
+  
+
+        <label><input type="radio" name="q9" value="a" /> FIFA</label><br />  
+
+  
+
+        <label><input type="radio" name="q9" value="b" /> NASA</label><br />  
+
+  
+
+        <label><input type="radio" name="q9" value="c" /> WHO</label><br />  
+
+  
+
+        <label><input type="radio" name="q9" value="d" /> NATO</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <!-- Question 10 -->  
+
+  
+
+      <div class="question" onmouseover="handleHover()">  
+
+  
+
+        <p>10. What is the best time to stop using screens before bed?</p>  
+
+  
+
+        <label><input type="radio" name="q10" value="a" /> 10 minutes before</label><br />  
+
+  
+
+        <label><input type="radio" name="q10" value="b" /> 30 minutes to 1 hour before</label><br />  
+
+  
+
+        <label><input type="radio" name="q10" value="c" /> It doesn't matter</label><br />  
+
+  
+
+        <label><input type="radio" name="q10" value="d" /> Only when you feel tired</label>  
+
+  
+
+      </div>  
+
+  
+
+   
+
+  
+
+      <br />  
+
+  
+
+      <button type="submit" onclick="handleClick()">Submit Quiz</button>  
+
+  
+
+    </form>  
+
+  
+
+  </div>  
+
+  
+
+</body>  
+
+  
+
+</html> 
